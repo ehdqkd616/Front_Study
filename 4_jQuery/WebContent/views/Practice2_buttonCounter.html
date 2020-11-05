@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>버튼 카운터</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<style>
+	.data-test{
+        width:100px; height:100px;
+        margin-right:10px;
+        display:inline-block;
+        font-size:30px;
+        background: rgb(200, 200, 0);
+    }
+</style>
+</head>
+<body>
+	<h1>버튼 카운트</h1>
+	<button id="btn1" class="data-test"> 0 </button>
+    <button id="btn2" class="data-test"> 0 </button>
+    <button id="btn3" class="data-test"> 0 </button>
+    
+    <script>
+        
+        $('.data-test').on('click', function(){
+            var count = Number($(this).text());
+            count++;
+            $(this).text(count).css('background','rgba(200,200,0,'+(1-count/10)+')');
+            if(count == 10){
+                $(this).off('click');
+            }
+        });
+    </script>
+    
+</body>
+</html>

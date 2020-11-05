@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="view port" content="width=device-width, initial-scale = 1">
+<title>게시판 항목</title>
+</head>
+<style>
+table {
+	border-collapse: collapse
+}
+
+table tr th, td { /*border :1px; solid :black;*/
+	text-align: center;
+	padding: 7px;
+}
+
+#b-main {
+	background-color: gray
+}
+
+.pagination {
+	display: inline-block;
+}
+/* pagination 설정부  */
+.pagination a {
+	padding: 8px 16px;
+	text-decoration: none;
+	norder: 1px solid yellow;
+	color: black;
+}
+
+.pagination a.active {
+	background-color: gray;
+	border: 1px solid gray;
+	color: white;
+}
+
+/* .pagination a:hover:not(.action){
+background-color: white;
+} */
+.pagination a:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+/* pagination 설정부  */
+</style>
+
+<body>
+
+
+	<table border="1" width="700px" align="center">
+
+		<caption>
+			<div align="right">
+				<select>
+					<option value="5pc">5개씩 보기</option>
+					<option value="10pc">10개씩 보기</option>
+				</select>
+				<button>글쓰기</button>
+			</div>
+		</caption>
+
+		<thead>
+			<tr id="b-main">
+				<th width="30px">번호</th>
+				<th width="300px">제목</th>
+				<th width="50px">작성자</th>
+				<th width="100px">날짜</th>
+				<th width="50px">조회 수</th>
+				<th width="30px">추천</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td><a href>오산의남자</a></td>
+				<td>구준표</td>
+				<td>2020.08.02</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td><a href>오산의남자</a></td>
+				<td>박상준</td>
+				<td>2020.08.02</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td><a href>오산의남자</a></td>
+				<td>김준표</td>
+				<td>2020.08.02</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td><a href>오산의남자</a></td>
+				<td>백지후</td>
+				<td>2020.08.02</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td><a href>오산의남자</a></td>
+				<td>구준표</td>
+				<td>2020.08.02</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td><a href>오산의남자</a></td>
+				<td>구준표</td>
+				<td>2020.08.02</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td><a href>오산의남자</a></td>
+				<td>구준표</td>
+				<td>2020.08.02</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr width="700px">
+
+	<ul align="center">
+		<div class="pagination">
+			<a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a>
+			<a href="#">4</a> <a href="#">5</a>
+		</div>
+	</ul>
+
+
+
+</body>
+</html>
+
+게시판 이에여

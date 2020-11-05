@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <script> 
+    $(document).ready(function(){
+    	$("#copy").click(function(){ 
+    		$(this).parent().clone().appendTo($("#result")); 	
+    	}); 
+    	$("#delete").click(function(){ 
+    		$(this).parent().remove(); 	
+    	}); 
+    });
+    </script>
+
+    <style>
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+        }
+    </style>
+
+</head>
+<body>
+	<div id="result">
+		<div id="item" class="item">
+			<button id='copy'>복사하기</button>
+			<button id='delete'>삭제하기</button>
+		</div>
+	</div>
+</body>
+</html>

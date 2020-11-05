@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>요구사항확인 모범답안</title>
+<style>
+#login {
+	float: right;
+}
+
+section.content {
+	width: 100%;
+	height: 400px;
+	background-color: gray;
+	clear: both;
+}
+
+header>ul {
+	clear: both;
+	list-style: none;
+}
+
+header>ul>li {
+	float: left;
+	margin-right: 40px;
+	display: inline-block;
+}
+
+footer {
+	width: 100%;
+	height: 80px;
+	padding-top: 3%;
+	background-color: skyblue;
+}
+</style>
+</head>
+<body>
+
+	<header>
+		<img id='logo'
+			src="http://iei.or.kr/resources/images/common/top_logo.jpg"
+			width="100%" height="100"> <br>
+
+		<nav id="menubar">
+			<ul>
+				<li><a href="">메인</a></li>
+				<li><a href="">공지사항</a></li>
+				<li><a href="">자유게시판</a></li>
+				<li><a href="">갤러리</a></li>
+				<li><a href="">자료실</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id='content'>
+		content내용<br>
+
+		<form action="/testw/login" method="post">
+			<table id="login" align="right">
+				<tr>
+					<td>아이디</td>
+					<td><input type="password" name="pw" id='pw' /></td>
+				</tr>
+				<tr>
+					<td>패스워드</td>
+					<td><input type="password" name="pw" id='pw' /></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" value="로그인" /> <input
+						type="button" value="회원가입" /></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+
+	<footer>
+		<p align=center>Copyright ⓒ 1998-2019 KH Information Educational
+			Institute All Right Reserved</p>
+	</footer>
+</body>
+</html>
+

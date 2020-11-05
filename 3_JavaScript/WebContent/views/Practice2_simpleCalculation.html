@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>실습문제2</title>
+</head>
+<body>
+	<input type="text" id='num1'>
+	<select id='gyesan'>
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option>
+	</select>
+	<input type="text" id='num2'>
+	<button onclick="cal();">=</button>
+	<input type="text" id='sum' readonly>
+	<script>
+      function cal(){
+         var num1 = document.getElementById('num1').value;
+         var num2 = document.getElementById('num2').value;
+         var sum = document.getElementById('sum');
+         var gyesan = document.getElementById('gyesan').value;
+         num1 *= 1;
+         num2 *= 1;
+         if(gyesan == '+'){
+            document.getElementById('sum').value = num1+num2;
+         }else if(gyesan == '-'){
+            document.getElementById('sum').value = num1-num2;
+         }else if(gyesan == '*'){
+            document.getElementById('sum').value = num1*num2;
+         }else if(gyesan == '/'){
+            if(num1/num2 == Infinity || isNaN(num1/num2)){
+                    sum.style.backgroundColor = 'red';
+                    sum.style.color = 'white';
+               sum.value = '연산불가';
+            }else{
+               document.getElementById('sum').value = num1/num2;
+            }
+            
+         }else if(gyesan == '%'){
+            if(num1%num2 == Infinity || isNaN(num1%num2)){
+                    sum.style.backgroundColor = 'red';
+                    sum.style.color = 'white';
+               sum.value = '연산불가';
+            }else{
+               document.getElementById('sum').value = num1%num2;
+            }
+         }
+      }
+   </script>
+</body>
+</html>
