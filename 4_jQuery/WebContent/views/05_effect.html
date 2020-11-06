@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>effect</title>
-<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
 <style>
 	.menu{
 		width:300px; height:30px;
@@ -19,7 +19,6 @@
 		height: 200px;
 		display: none;
 	}
-
 </style>
 </head>
 <body>
@@ -32,7 +31,7 @@
 	<button id="show">보이기</button>
 	<button id="hide">숨기기</button>
 	<button id="toggle">토글이</button><br>
-	<img id="river" src="../images/river1.PNG">
+	<img id="river" src="../images/river1.png">
 	<script>
 		$(function(){
 			$('#show').click(function(){
@@ -42,7 +41,7 @@
 				$('#river').hide(2344);
 			});
 			$('#toggle').click(function(){
-				$('#river').toggle(); // toggle(이곳에 밀리세컨 입력)
+				$('#river').toggle();
 			});
 		});
 	</script>
