@@ -1,2 +1,2 @@
-# Gugbi_4_Front_workspace
-Gugbi_4_Front_workspace
+# Front_Study
+### Front 공부 (HTML, CSS, JavaScript, jQuery)
